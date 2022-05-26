@@ -5,6 +5,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import ClasesScrenn from '../screens/Clases/ClasesScrenn';
 import {RootStackParamList} from '../Navigation/types';
 import React from 'react';
+import ClasesNavigator from '../Navigation/ClasesNavigator';
+
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Navigator = () => {
   return (

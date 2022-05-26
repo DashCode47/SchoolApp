@@ -9,10 +9,9 @@ import {
   FlatList,
 } from 'react-native';
 import React, {useState} from 'react';
-import BoxClasses from '../../Components/BoxClasses';
+import BoxClasses from '../../../Components/BoxClasses';
 import Entypo from 'react-native-vector-icons/Entypo';
-import FormikAddClass from './FormikAddClass';
-import ClasesNavigator from '../../Navigation/ClasesNavigator';
+import FormikAddClass from '../FormikAddClass';
 
 interface IClass {
   tutor: string;
@@ -20,7 +19,7 @@ interface IClass {
   key: number | string;
 }
 
-const ClasesScrenn = () => {
+const ClassList = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [data, setdata] = useState<IClass[]>([
     {materia: 'Matematicas', tutor: 'Profesor B.B legosa', key: 1},
@@ -126,4 +125,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ClasesScrenn;
+export default ClassList;

@@ -7,3 +7,16 @@ export type RootStackParamList = {
   
   };
   export type UserProfileNavigationProp = NativeStackNavigationProp<RootStackParamList,'Class'>;
+
+  export type ClassStackParamList = {
+    Classes: undefined;
+    Details: undefined;
+  };
+  export type BotNav = {
+    Home: undefined,
+    Clases:undefined;
+    Create:undefined;
+
+  }
+
+ export type ClassDetailNav = NativeStackNavigationProp<ClassStackParamList,'Details'>; 

@@ -51,7 +51,7 @@ export default ProfileTag;
 
 const styles = StyleSheet.create({
   container: {
-    height: '35%',
+    height: '39%',
     marginHorizontal: '5%',
     padding: '5%',
     borderRadius: 30,

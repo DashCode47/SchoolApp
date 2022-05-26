@@ -9,6 +9,8 @@ import {
 import React, {Children, ReactNode} from 'react';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Entypo from 'react-native-vector-icons/Entypo';
+import {useNavigation} from '@react-navigation/native';
+import {ClassDetailNav} from '../Navigation/types';
 
 interface IBox {
   children: ReactNode;
@@ -16,8 +18,14 @@ interface IBox {
 }
 
 const BoxClasses = ({children, tutor}: IBox) => {
+  const navigation = useNavigation<ClassDetailNav>();
+
   return (
-    <TouchableOpacity style={styles.box} onPress={console.log('hi')}>
+    <TouchableOpacity
+      style={styles.box}
+      onPress={() => {
+        navigation.navigate('Details');
+      }}>
       <View style={styles.icons}>
         <Text style={styles.materia}>{children}</Text>
       </View>
